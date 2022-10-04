@@ -8,7 +8,7 @@ from detectron2.layers import Conv2d, ShapeSpec, get_norm
 
 from detectron2.modeling.backbone import Backbone, build_resnet_backbone
 from detectron2.modeling import BACKBONE_REGISTRY
-from .dlafpn import dla34
+from centernet.modeling.backbone.dlafpn import dla34
 
 __all__ = []
 

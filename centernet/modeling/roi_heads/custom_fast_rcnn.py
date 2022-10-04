@@ -18,7 +18,7 @@ from detectron2.modeling.roi_heads.fast_rcnn import FastRCNNOutputLayers
 from detectron2.modeling.roi_heads.fast_rcnn import fast_rcnn_inference
 from detectron2.modeling.roi_heads.fast_rcnn import _log_classification_stats
 from detectron2.utils.comm import get_world_size
-from .fed_loss import load_class_freq, get_fed_loss_inds
+from centernet.modeling.roi_heads.fed_loss import load_class_freq, get_fed_loss_inds
 
 __all__ = ["CustomFastRCNNOutputLayers"]
 

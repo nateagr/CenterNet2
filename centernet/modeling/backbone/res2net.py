@@ -19,8 +19,8 @@ from detectron2.layers import (
 from detectron2.modeling.backbone import Backbone
 from detectron2.modeling.backbone.fpn import FPN 
 from detectron2.modeling.backbone.build import BACKBONE_REGISTRY
-from .fpn_p5 import LastLevelP6P7_P5
-from .bifpn import BiFPN
+from centernet.modeling.backbone.fpn_p5 import LastLevelP6P7_P5
+from centernet.modeling.backbone.bifpn import BiFPN
 
 __all__ = [
     "ResNetBlockBase",

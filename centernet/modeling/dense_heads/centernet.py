@@ -15,13 +15,13 @@ from detectron2.modeling import detector_postprocess
 from detectron2.utils.comm import get_world_size
 from detectron2.config import configurable
 
-from ..layers.heatmap_focal_loss import heatmap_focal_loss_jit
-from ..layers.heatmap_focal_loss import binary_heatmap_focal_loss_jit
-from ..layers.iou_loss import IOULoss
-from ..layers.ml_nms import ml_nms
-from ..debug import debug_train, debug_test
-from .utils import reduce_sum, _transpose
-from .centernet_head import CenterNetHead
+from centernet.modeling.layers.heatmap_focal_loss import heatmap_focal_loss_jit
+from centernet.modeling.layers.heatmap_focal_loss import binary_heatmap_focal_loss_jit
+from centernet.modeling.layers.iou_loss import IOULoss
+from centernet.modeling.layers.ml_nms import ml_nms
+from centernet.modeling.debug import debug_train, debug_test
+from centernet.modeling.dense_heads.utils import reduce_sum, _transpose
+from centernet.modeling.dense_heads.centernet_head import CenterNetHead
 
 __all__ = ["CenterNet"]
 

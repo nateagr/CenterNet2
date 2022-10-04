@@ -17,7 +17,7 @@ from detectron2.modeling.backbone.resnet import build_resnet_backbone
 from detectron2.modeling.backbone.build import BACKBONE_REGISTRY
 from detectron2.layers.batch_norm import get_norm
 from detectron2.modeling.backbone import Backbone
-from .dlafpn import dla34
+from centernet.modeling.backbone.dlafpn import dla34
 
 def get_fpn_config(base_reduction=8):
     """BiFPN config with sum."""

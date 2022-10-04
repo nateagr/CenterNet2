@@ -16,7 +16,7 @@ from detectron2.modeling.roi_heads.fast_rcnn import fast_rcnn_inference
 from detectron2.modeling.roi_heads.roi_heads import ROI_HEADS_REGISTRY, StandardROIHeads
 from detectron2.modeling.roi_heads.cascade_rcnn import CascadeROIHeads
 from detectron2.modeling.roi_heads.box_head import build_box_head
-from .custom_fast_rcnn import CustomFastRCNNOutputLayers
+from centernet.modeling.roi_heads.custom_fast_rcnn import CustomFastRCNNOutputLayers
 
 
 @ROI_HEADS_REGISTRY.register()

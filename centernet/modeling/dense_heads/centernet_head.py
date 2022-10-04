@@ -6,7 +6,7 @@ from torch.nn import functional as F
 
 from detectron2.layers import ShapeSpec, get_norm
 from detectron2.config import configurable
-from ..layers.deform_conv import DFConv2d
+from centernet.modeling.layers.layers.deform_conv import DFConv2d
 
 __all__ = ["CenterNetHead"]
 

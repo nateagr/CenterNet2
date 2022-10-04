@@ -17,7 +17,7 @@ from fvcore.transforms.transform import (
 from PIL import Image
 
 from detectron2.data.transforms.augmentation import Augmentation
-from .custom_transform import EfficientDetResizeCropTransform
+from centernet.data.transforms.custom_transform import EfficientDetResizeCropTransform
 
 __all__ = [
     "EfficientDetResizeCrop",

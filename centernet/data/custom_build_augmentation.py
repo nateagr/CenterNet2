@@ -17,7 +17,7 @@ from detectron2.structures import (
 )
 
 from detectron2.data import transforms as T
-from .transforms.custom_augmentation_impl import EfficientDetResizeCrop
+from centernet.data.transforms.custom_augmentation_impl import EfficientDetResizeCrop
 
 def build_custom_augmentation(cfg, is_train):
     """
