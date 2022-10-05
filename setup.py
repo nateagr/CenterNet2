@@ -16,9 +16,10 @@ _REQUIREMENTS_TXT = _read_reqs("requirements.txt")
 
 setuptools.setup(
     name='centernet_fork',
-    version='0.0.1',
+    version='0.0.2',
     install_requires=_REQUIREMENTS_TXT,
     description="Fork of repository https://github.com/xingyizhou/CenterNet2",
+    url="https://github.com/nateagr/CenterNet2",
     include_package_data=True,
     packages=setuptools.find_packages()
 )
